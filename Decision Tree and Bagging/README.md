@@ -39,7 +39,6 @@
 &emsp; In this chapter, we quantitatively analysis the performance of `Random Tree Learning` and `Decision Tree Learning`. From Fig. 3 and Fig. 4, we can see that Random Tree can not defeat Decision Tree regarding RMSE. Both algorithm will suffer from overfitting, however, random tree algorithm can reduce the overfitting somehow.
 
 <p align="center">
-    <title> n</title>
   <img src="img/3.png" width="425" > 
   <img src="img/4.png" width="425"/>
   <br> 
