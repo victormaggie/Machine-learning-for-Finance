@@ -21,15 +21,15 @@
 </p>
 
   where, n is the window represents how far we look back the data, $A_n$ is the data in our window.
-
-  $$ SMR_{ration} = \frac{p_x}{SMA(t)}$$
-
+<p align = "center">
+  <a href="https://www.codecogs.com/eqnedit.php?latex=SMR_{ration}&space;=&space;\frac{p_x}{SMA(t)}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?SMR_{ration}&space;=&space;\frac{p_x}{SMA(t)}" title="SMR_{ration} = \frac{p_x}{SMA(t)}" /></a>
+</p>
   &emsp; In indicator pool, SMA_Ratio is a indicator for BUY or SELL signal. The naïve SMA_Ratio algorithm is that 
 
   _______________________________________________________________________________________________</br>
    * Algorithm 1: 
       - Calculate: SMA(n)
-      - Calculate: $ SMR_{ration} = \frac{p_x}{SMA(t)}$
+      - Calculate: SMR_{ration} = \frac{p_x}{SMA(t)}
         - If  $ SMR_{ration} < 0.92$:</br>  Action = LONG
         - If  $ SMR_{ration} > 1.92$:</br>  Action = SHORT
         - else: </br> Action = Do Nothing
