@@ -33,6 +33,7 @@
         - If  <a href="https://www.codecogs.com/eqnedit.php?latex=SMR_{ratio}&space;>&space;1.92" target="_blank"><img src="https://latex.codecogs.com/svg.latex?SMR_{ratio}&space;>&space;1.92" title="SMR_{ratio} > 1.92" /></a>:</br>  Action = SHORT
         - else: </br> Action = Do Nothing
       - End
+      <br>
   _________________________________________________________________________________________</br>
   <p align = "center">  <font size = "1">This shows how SMA ratio works, but for the real indicators, we combine SMA, Bollinger band and MACD together </font> </p>
 
@@ -53,9 +54,9 @@
   &emsp; Bollinger Bands are the technical analysis tool developed by John Bollinger, which contains SMA, upper band and lower band, the calculation for upper band and lower band can be shown as following equations,
   <p align="center">
   <br><a href="https://www.codecogs.com/eqnedit.php?latex=BB_{top}&space;=&space;SMA&space;&plus;&space;(2&space;*&space;std_{sma})" target="_blank"><img src="https://latex.codecogs.com/svg.latex?BB_{top}&space;=&space;SMA&space;&plus;&space;(2&space;*&space;std_{sma})" title="BB_{top} = SMA + (2 * std_{sma})" /></a></br>
-  <a href="https://www.codecogs.com/eqnedit.php?latex=BB_{bottom}&space;=&space;SMA&space;-&space;(2&space;*&space;std_{sma})" target="_blank"><img src="https://latex.codecogs.com/svg.latex?BB_{bottom}&space;=&space;SMA&space;-&space;(2&space;*&space;std_{sma})" title="BB_{bottom} = SMA - (2 * std_{sma})" /></a></br>
-  <a href="https://www.codecogs.com/eqnedit.php?latex=BB_{ratio}&space;=&space;\frac{p(x)-SMA(t)}{2&space;*&space;std(t)}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?BB_{ratio}&space;=&space;\frac{p(x)-SMA(t)}{2&space;*&space;std(t)}" title="BB_{ratio} = \frac{p(x)-SMA(t)}{2 * std(t)}" /></a>
-<p>
+  <br><a href="https://www.codecogs.com/eqnedit.php?latex=BB_{bottom}&space;=&space;SMA&space;-&space;(2&space;*&space;std_{sma})" target="_blank"><img src="https://latex.codecogs.com/svg.latex?BB_{bottom}&space;=&space;SMA&space;-&space;(2&space;*&space;std_{sma})" title="BB_{bottom} = SMA - (2 * std_{sma})" /></a></br>
+  <br><a href="https://www.codecogs.com/eqnedit.php?latex=BB_{ratio}&space;=&space;\frac{p(x)-SMA(t)}{2&space;*&space;std(t)}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?BB_{ratio}&space;=&space;\frac{p(x)-SMA(t)}{2&space;*&space;std(t)}" title="BB_{ratio} = \frac{p(x)-SMA(t)}{2 * std(t)}" /></a></br>
+</p>
 <p align = "center">
     <img src='img/2.png'> </br>
     <b> 
@@ -156,20 +157,20 @@
 ### Part III Manual Strategy
 
 &emsp; For the part, we ensemble the indicators from the Part II, because the theoretically optimal method cannot be feasible for the real stock trading, then we define a Manual strategy trading for the calculation, as following:
-- If $MACD_{divergence}$ from Negative to Positive or Bollinger ratio <- 0.91 and  SMA_Ratio < 0.99:
+- If <a href="https://www.codecogs.com/eqnedit.php?latex=MACD_{divergence}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?MACD_{divergence}" title="MACD_{divergence}" /></a> from Negative to Positive or Bollinger ratio <- 0.91 and  SMA<sub>ratio</sub> < 0.99:
   - This is **BUY** signal
-- If $MACD_{divergence}$ from Positive to Negative or Bollinger ratio > 0.91 and  SMA_Ratio > 1.01:
+- If <a href="https://www.codecogs.com/eqnedit.php?latex=MACD_{divergence}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?MACD_{divergence}" title="MACD_{divergence}" /></a> from Positive to Negative or Bollinger ratio > 0.91 and  SMA<sub>ratio</sub> > 1.01:
   - This is **SELL** signal
 - Otherwise, do NOTHING
 
 <p align = "center"><b> Table 2. Statistic calculation table</b> </p>
-
+<p align = "center>
 |   Statistics Items	|   Manual Strategy	|   Benchmark	| 
 |:---:	|:---:	|:---:	|
 |   Cumulative return	|   0.6615	|   0.0123	|  
 |   Standard deviation of daily return	|   0.000783	|   0.0012	|  
 |   Mean of daily return	|   0.00078	|   0.0012	|  
-
+</p>
 &emsp; The calculation plot is shown as following, 
 <p align = "center">
     <img src='img/6.png'> </br>
@@ -216,6 +217,7 @@
 #### 2. Experiment analysis
 
  - Experiment analysis I
+ 
     &emsp;In the first experiment, performance of Q-learning strategy was analysis and compare it with bench and manual strategy. The data was JP Morgan data range from Jan 1, 2008 to December 31 2009. The benchmark is to start with 100,000$ cash and buy 1000 shares on the first day and short 1000 on the last day. The impact parameter is chosen as 0.005 for manual strategy and strategy learner. The result is shown as Fig. 5. 
     <p align = "center">
     <img src='img/8.png'> </br>
@@ -228,12 +230,13 @@
 &emsp;Would you expect this relative result every time with in-sample data? Yes, for the development of Q-learning algorithm, we use the convergence check method, if the order table is constant, as such, the same training dataset will result in the relative results.
 
  - Experiment analysis II
+ 
 &emsp;The metrics used for analysis the influence of impact to strategy learning is cumulative return and number of trades with different impact values. As we can see in Fig 6, with small impact value, the Q learning will get smaller influence on the performance, and the manual strategy linearly decrease with the increasing of impact.
 
 &emsp; In Fig. 9, the change of impact has no effort on manual strategy, as well as Q-learning algorithm. Even the is a small fluctuation around 200, but the number of order still remain in a same number nearly 200.  As such, we can conclude that the impact will not or slight influence Number of orders.
 
 <p align = "center">
-    <img src='/img/9.png' width="425"> 
+    <img src='img/9.png' width="425"> 
     <img src='img/10.png' width="425"/>
     <br>
       <b> 
@@ -241,6 +244,7 @@
       </b>
   </br>
 </p>
+
 
 ### Part VI Reference
 
