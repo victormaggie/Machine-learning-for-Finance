@@ -29,7 +29,7 @@
   _______________________________________________________________________________________________</br>
    * Algorithm 1: 
       - Calculate: SMA(n)
-      - Calculate: SMR_{ration} = \frac{p_x}{SMA(t)}
+      - Calculate: SMR<sub>{ration} = \frac{p_x}{SMA(t)}  h<sub>&theta;</sub>(x) = &theta;<sub>o</sub> x + &theta;<sub>1</sub>x
         - If  $ SMR_{ration} < 0.92$:</br>  Action = LONG
         - If  $ SMR_{ration} > 1.92$:</br>  Action = SHORT
         - else: </br> Action = Do Nothing
