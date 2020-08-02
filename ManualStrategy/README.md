@@ -15,7 +15,7 @@
 * 1.	Simple Moving Average
   &emsp; The Simple Moving Average (SMA) is a technical indicator for determining if an asset price will continue or reverse a bull or bear tread [1](https://www.investopedia.com/terms/s/sma.asp). SMA is calculated as the arithmetic average of an asset price, while Exponential Moving Average (EMA) that weight more on the recent price. The calculation of SMA is shown as following,
 
-  ![SMA = \frac{A_1 + A_2 + A_3 + A_4 ... + A_n}{n}}{2a}](http://www.sciweavers.org/tex2img.php?eq=SMA%20%3D%20%5Cfrac%7BA_1%20%2B%20A_2%20%2B%20A_3%20%2B%20A_4%20...%20%2B%20A_n%7D%7Bn%7D&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
+  ![SMA = \frac{A_1 + A_2 + A_3 + A_4 ... + A_n}{n}}{2a}](http://www.sciweavers.org/tex2img.php?eq=%24%24SMA%20%3D%20%5Cfrac%7BA_1%20%2B%20A_2%20%2B%20A_3%20%2B%20A_4%20...%20%2B%20A_n%7D%7Bn%7D%24%24&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=)
 
 ![\Large SMA = \frac{A_1\p A_2 \p A_3 \p A_4 ... \p A_n}{n}}{2a}](https://latex.codecogs.com/svg.latex?x%3D%5Cfrac%7B-b%5Cpm%5Csqrt%7Bb%5E2-4ac%7D%7D%7B2a%7D)
 
