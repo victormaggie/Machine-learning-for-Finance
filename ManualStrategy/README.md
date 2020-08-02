@@ -28,10 +28,10 @@
 
   _______________________________________________________________________________________________</br>
    * Algorithm 1: 
-      - Calculate: SMA(n)
+      - Calculate: SMA<sub>n
       - Calculate: <a href="https://www.codecogs.com/eqnedit.php?latex=SMR_{ration}&space;=&space;\frac{p_x}{SMA(t)}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?SMR_{ration}&space;=&space;\frac{p_x}{SMA(t)}" title="SMR_{ration} = \frac{p_x}{SMA(t)}" /></a>
-        - If  $ SMR_{ration} < 0.92$:</br>  Action = LONG
-        - If  $ SMR_{ration} > 1.92$:</br>  Action = SHORT
+        - If  $ SMR<sub>ration</sub> < 0.92$:</br>  Action = LONG
+        - If  $ SMR<sub>ration</sub> > 1.92$:</br>  Action = SHORT
         - else: </br> Action = Do Nothing
       - End
   _________________________________________________________________________________________</br>
