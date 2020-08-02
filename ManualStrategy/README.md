@@ -18,6 +18,7 @@
   $$ SMA = \frac{A_1 \p A_2 \p A_3 \p A_4 ... \p A_n}{n}$$
 
 <img src="https://latex.codecogs.com/svg.latex?\Large&space;SMA =\large \frac{A_1 \p A_2 \p A_3 \p A_4 ... \p A_n}{n}"/>
+<img src="https://render.githubusercontent.com/render/math?SMA =\large \frac{A_1 \p A_2 \p A_3 \p A_4 ... \p A_n}{n}">
   where, n is the window represents how far we look back the data, $A_n$ is the data in our window.
 
   $$ SMR_{ration} = \frac{p_x}{SMA(t)}$$
