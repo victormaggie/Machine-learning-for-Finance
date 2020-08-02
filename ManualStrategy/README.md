@@ -36,7 +36,7 @@
 
   &emsp;The calculation of , $SMA_{Ratio}$ is relative handy in pandas dataframe, we use the rolling window moving average to calculate, the calculation result is as following, 
 <p align = "center">
-    <img src='/img/1.png'> </br>
+    <img src='img/1.png'> </br>
     <b> 
         Fig. 1 SMA and SMA ratio figure for the data from (2008,1,1) to (2009, 12,31) 
     </b>
@@ -54,7 +54,7 @@
   $$BB_{ratio} = \frac{p(x)-SMA(t)}{2 * std(t)}$$
 
 <p align = "center">
-    <img src='/img/2.png'> </br>
+    <img src='img/2.png'> </br>
     <b> 
         Fig.2 Bollinger band ratio calculation 
     </b>
@@ -64,7 +64,7 @@
 &emsp; For comparison, Bollinger band percent was also be used in the experiment, but its indication was not useful, as shown in Fig. 3, this indicator cannot give us good signal for my experiment study. As a result, I used Bollinger band ratio offered by project description.
 
 <p align = "center">
-    <img src='/img/3.png'> </br>
+    <img src='img/3.png'> </br>
     <b> 
         Fig.3 Bollinger band percent calculation
     </b>
@@ -81,7 +81,7 @@
    $$MACD_{divergence} = MACD_{line} - MACD_{signal}$$
 
    <p align = "center">
-    <img src='/img/4.png'> </br>
+    <img src='img/4.png'> </br>
     <b> 
         Fig.4 MACD calculation results
     </b>
@@ -95,7 +95,7 @@ $$P(t) - p(t + 1) <0 \rArr LONG$$
 
 &emsp; For easy understanding, $p(t)-p(t+1)>0$ that means the stock price will decrease. $p(t)-p(t+1)<0$ that means the stock price will increase. 
 <p align = "center">
-    <img src='/img/5.png' width = "550"> </br>
+    <img src='img/5.png' width = "550"> </br>
     <b> 
         Fig.5 JP Morgan data from 2008-2009 calculation results
     </b>
@@ -158,7 +158,7 @@ $$P(t) - p(t + 1) <0 \rArr LONG$$
 
 &emsp; The calculation plot is shown as following, 
 <p align = "center">
-    <img src='/img/6.png'> </br>
+    <img src='img/6.png'> </br>
     <b> 
         Fig.6 JP Morgan data from 2008-2009 calculation results
     </b>
@@ -170,7 +170,7 @@ $$P(t) - p(t + 1) <0 \rArr LONG$$
 
 &emsp; As we discussed before, when we use the in sample data has cumulative return 0.662, but for out sample data, we have 0.1655. we can see that the out sample data is not as good as in sample data for the calculation. This means the parameter of Bollinger band and SMA ratio criterionS for the in sample data works worse, but it is still useful for trading as we still earn money from this strategy. This has some sort of Machine Learning flavor, tunning the parameter and fit the data, but may not work well for out sample data . 
 <p align = "center">
-    <img src='/img/7.png'> </br>
+    <img src='img/7.png'> </br>
     <b> 
         Fig.7 JP Morgan data from 2010-2011 calculation results (out sample data)
     </b>
@@ -200,7 +200,7 @@ $$ X_{scale} = \frac{X - u}{\sigma}$$
  - Experiment analysis I
     &emsp;In the first experiment, performance of Q-learning strategy was analysis and compare it with bench and manual strategy. The data was JP Morgan data range from Jan 1, 2008 to December 31 2009. The benchmark is to start with 100,000$ cash and buy 1000 shares on the first day and short 1000 on the last day. The impact parameter is chosen as 0.005 for manual strategy and strategy learner. The result is shown as Fig. 5. 
     <p align = "center">
-    <img src='/img/8.png'> </br>
+    <img src='img/8.png'> </br>
     <b> 
         Fig.8 Comparison of different method for in sample data
     </b>
@@ -215,7 +215,7 @@ $$ X_{scale} = \frac{X - u}{\sigma}$$
 &emsp; In Fig. 9, the change of impact has no effort on manual strategy, as well as Q-learning algorithm. Even the is a small fluctuation around 200, but the number of order still remain in a same number nearly 200.  As such, we can conclude that the impact will not or slight influence Number of orders.
 
 <p align = "center">
-    <img src='/img/9.png' width=500> 
+    <img src='img/9.png' width=500> 
     <img src='img/10.png' width=500>
     </br>
     <b> 

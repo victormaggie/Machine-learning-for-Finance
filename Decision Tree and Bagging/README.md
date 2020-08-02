@@ -6,7 +6,7 @@
 #### 1. Overfitting versue leaf size
 
 <p align="center">
-  <img src="/img/Q1.png">
+  <img src="img/Q1.png">
 </p>
 <p align="center">
     <b>
@@ -21,7 +21,7 @@
 &emsp; We built a **Random Forest** tree by bootstrap aggreating method. In order to discuss the how bootstrap can help solve the overfitting, we choose the bag size as 20, and leaf size differs from 1 ~ 18 to do the analysis.
 
 <p align="center">
-  <img src="/img/Q2.png">
+  <img src="img/Q2.png">
   <br>
     <b> 
         Fig. 2 RMSE with leaf size for Bagging Learner
@@ -40,8 +40,8 @@
 
 <p align="center">
     <title> n</title>
-  <img src="/img/3.png" width="425" > 
-  <img src="/img/4.png" width="425"/>
+  <img src="img/3.png" width="425" > 
+  <img src="img/4.png" width="425"/>
   <br> 
         <b>
             Fig. 3 RMSE with leaf size for Bagging Learner
@@ -52,7 +52,7 @@
 &emsp; Howver, in terms of time complexity, random tree is very fast. As Figure 4, decision tree is linear time complexity. In terms of random tree, it is more like a constant time complexity.
 
 <p align="center">
-  <img src="/img/5.png" width="600">
+  <img src="img/5.png" width="600">
   <br>
     <b> 
         Fig. 4 Time complexity for Decision Tree Learning and Random Tree Learning
