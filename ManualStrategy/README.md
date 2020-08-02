@@ -29,8 +29,8 @@
    * Algorithm 1: 
       - Calculate: SMA<sub>n
       - Calculate: <a href="https://www.codecogs.com/eqnedit.php?latex=SMR_{ration}&space;=&space;\frac{p_x}{SMA(t)}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?SMR_{ration}&space;=&space;\frac{p_x}{SMA(t)}" title="SMR_{ration} = \frac{p_x}{SMA(t)}" /></a>
-        - If  $ SMR<sub>ration</sub> < 0.92$:</br>  Action = LONG
-        - If  $ SMR<sub>ration</sub> > 1.92$:</br>  Action = SHORT
+        - If  <a href="https://www.codecogs.com/eqnedit.php?latex=SMR_ratio&space;<&space;0.92" target="_blank"><img src="https://latex.codecogs.com/svg.latex?SMR_ratio&space;<&space;0.92" title="SMR_ratio < 0.92" /></a>:</br>  Action = LONG
+        - If  <a href="https://www.codecogs.com/eqnedit.php?latex=SMR_{ratio}&space;>&space;1.92" target="_blank"><img src="https://latex.codecogs.com/svg.latex?SMR_{ratio}&space;>&space;1.92" title="SMR_{ratio} > 1.92" /></a>:</br>  Action = SHORT
         - else: </br> Action = Do Nothing
       - End
   _________________________________________________________________________________________</br>
@@ -51,8 +51,8 @@
 
 * **2. Bollinger bands**<br> </br>
   &emsp; Bollinger Bands are the technical analysis tool developed by John Bollinger, which contains SMA, upper band and lower band, the calculation for upper band and lower band can be shown as following equations,
-  <br>BB<sub>top</sub> = SMA + (2 * std<sub>sma</sub>})</br>
-  <br>BB<sub>bottom</sub> = SMA - (2 * std<sub>sma</sub>)</br>
+  <br><a href="https://www.codecogs.com/eqnedit.php?latex=BB_{top}&space;=&space;SMA&space;&plus;&space;(2&space;*&space;std_{sma})" target="_blank"><img src="https://latex.codecogs.com/svg.latex?BB_{top}&space;=&space;SMA&space;&plus;&space;(2&space;*&space;std_{sma})" title="BB_{top} = SMA + (2 * std_{sma})" /></a></br>
+  <br><a href="https://www.codecogs.com/eqnedit.php?latex=BB_{bottom}&space;=&space;SMA&space;-&space;(2&space;*&space;std_{sma})" target="_blank"><img src="https://latex.codecogs.com/svg.latex?BB_{bottom}&space;=&space;SMA&space;-&space;(2&space;*&space;std_{sma})" title="BB_{bottom} = SMA - (2 * std_{sma})" /></a></br>
   <a href="https://www.codecogs.com/eqnedit.php?latex=BB_{ratio}&space;=&space;\frac{p(x)-SMA(t)}{2&space;*&space;std(t)}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?BB_{ratio}&space;=&space;\frac{p(x)-SMA(t)}{2&space;*&space;std(t)}" title="BB_{ratio} = \frac{p(x)-SMA(t)}{2 * std(t)}" /></a>
 
 <p align = "center">
@@ -73,11 +73,11 @@
 </p>
 
 * 3. Moving Average Convergence Divergence (MACD) <br> </br>
- &emsp; Based on exponentially weighted moving average, the calculation formula is shown as,
-<a href="https://www.codecogs.com/eqnedit.php?latex=ewa&space;=&space;\sum_{i=1}^{n}\frac{2}{N&plus;1}(1-&space;\frac{2}{N&plus;1})^{i}x_{i-1}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?ewa&space;=&space;\sum_{i=1}^{n}\frac{2}{N&plus;1}(1-&space;\frac{2}{N&plus;1})^{i}x_{i-1}" title="ewa = \sum_{i=1}^{n}\frac{2}{N+1}(1- \frac{2}{N+1})^{i}x_{i-1}" /></a>
+ &emsp; Based on exponentially weighted moving average, the calculation formula is shown as,<br>
+<a href="https://www.codecogs.com/eqnedit.php?latex=ewa&space;=&space;\sum_{i=1}^{n}\frac{2}{N&plus;1}(1-&space;\frac{2}{N&plus;1})^{i}x_{i-1}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?ewa&space;=&space;\sum_{i=1}^{n}\frac{2}{N&plus;1}(1-&space;\frac{2}{N&plus;1})^{i}x_{i-1}" title="ewa = \sum_{i=1}^{n}\frac{2}{N+1}(1- \frac{2}{N+1})^{i}x_{i-1}" /></a></br>
  &emsp;  There has three lines in MACD model, the first one is 12 day exponentially weighted moving average, 26 day exponentially weighted moving average, the difference is MACD line,
-  <br>MACD<sub>line</sub> = ewa(p_t, window = 12) - ewa(p_t, window=26)</br>
-  <br>MACD<sub>signal</sub> = ewa(MACD<sub>line</sub>, window=9)</br>
+  <br><a href="https://www.codecogs.com/eqnedit.php?latex=MACD_{line}&space;=&space;ewa(p_t,&space;window&space;=&space;12)&space;-&space;ewa(p_t,&space;window=26)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?MACD_{line}&space;=&space;ewa(p_t,&space;window&space;=&space;12)&space;-&space;ewa(p_t,&space;window=26)" title="MACD_{line} = ewa(p_t, window = 12) - ewa(p_t, window=26)" /></a></br>
+  <br><a href="https://www.codecogs.com/eqnedit.php?latex=MACD_{signal}&space;=&space;ewa(MACD_{line},&space;window=9)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?MACD_{signal}&space;=&space;ewa(MACD_{line},&space;window=9)" title="MACD_{signal} = ewa(MACD_{line}, window=9)" /></a></br>
 
    &emsp;  As a result, the divergence of MACD, which is the difference of MACD<sub>line</sub> and MACD<sub>signal</sub>, can be used as the indication for **BUY** and **SELL** signal.
    <br>MACD<sub>divergence</sub> = MACD<sub>line</sub> - MACD<sub>signal</sub>
@@ -92,8 +92,8 @@
 ### Part II Theoretically Optimal Strategy
 
 &emsp; In this part, we introduce the naïve stock trading policy, we assume that we can see the future. As such, we use the JP Morgan data as the future stock data. If we daily return is larger than 0, then the action is LONG, if daily return is less than 0, then we SHORT the stock. In the experiment, the technical indicator is that, 
-$$p(t) - p(t + 1) > 0 \rArr SHORT$$
-$$P(t) - p(t + 1) <0 \rArr LONG$$
+<br><a href="https://www.codecogs.com/eqnedit.php?latex=P(t)&space;-&space;p(t&space;&plus;&space;1)&space;>&space;0&space;\rightarrow&space;SHORT" target="_blank"><img src="https://latex.codecogs.com/svg.latex?P(t)&space;-&space;p(t&space;&plus;&space;1)&space;>&space;0&space;\rightarrow&space;SHORT" title="P(t) - p(t + 1) > 0 \rightarrow SHORT" /></a></br>
+<br><a href="https://www.codecogs.com/eqnedit.php?latex=P(t)&space;-&space;p(t&space;&plus;&space;1)&space;<0&space;\rightarrow&space;LONG" target="_blank"><img src="https://latex.codecogs.com/svg.latex?P(t)&space;-&space;p(t&space;&plus;&space;1)&space;<0&space;\rightarrow&space;LONG" title="P(t) - p(t + 1) <0 \rightarrow LONG" /></a></br>
 
 &emsp; For easy understanding, $p(t)-p(t+1)>0$ that means the stock price will decrease. $p(t)-p(t+1)<0$ that means the stock price will increase. 
 <p align = "center">
@@ -183,18 +183,19 @@ $$P(t) - p(t + 1) <0 \rArr LONG$$
 #### 1. Q-learning algorithm
 
 &emsp; Model-free reinforcement learning algorithm , Q-learning, is used as the learning trader. It use the transition tuples $<s, a, r, s’>$, the goal of Q-learning is to learn a policy, which tells an agent what action to take under what circumstance. It does not require a model of environment, and it can handle problems with stochastic transitions and rewards, without requiring adaptations. The update equation is as followings,
-
-$$Q^{new} (s_t,a_t )←(1-a)*Q(s_t,a_t )+a*(r_t+γ*max_{a}Q(s_(t+1),a))$$
-$$ \prod{}{^*}(s) = argmax_aQ^{new}(s, a) $$
+<br>
+<a href="https://www.codecogs.com/eqnedit.php?latex=Q^{new}&space;(s_t,a_t&space;)\leftarrow&space;(1-a)*Q(s_t,a_t)&plus;a*(r_t&plus;\gamma&space;*max_{a}Q(s_{t&plus;1},a))" target="_blank"><img src="https://latex.codecogs.com/svg.latex?Q^{new}&space;(s_t,a_t&space;)\leftarrow&space;(1-a)*Q(s_t,a_t)&plus;a*(r_t&plus;\gamma&space;*max_{a}Q(s_{t&plus;1},a))" title="Q^{new} (s_t,a_t )\leftarrow (1-a)*Q(s_t,a_t)+a*(r_t+\gamma *max_{a}Q(s_{t+1},a))" /></a>
+</br>
+<br><a href="https://www.codecogs.com/eqnedit.php?latex=\prod{}{^*}(s)&space;=&space;argmax_aQ^{new}(s,&space;a)" target="_blank"><img src="https://latex.codecogs.com/svg.latex?\prod{}{^*}(s)&space;=&space;argmax_aQ^{new}(s,&space;a)" title="\prod{}{^*}(s) = argmax_aQ^{new}(s, a)" /></a></br>
 
 &emsp; Where $r_t$ is the reward, a is the learning rate, $\gamma$ is the discount factor.
 
 - States:  For each three indicators, I use 10 bins to do data binning, number of state $10^3$
 - Actions: The action for this calculation is that `LONG`, `SHORT`, `Do Nothing`. For the reinforcement learning algorithm, we use 0, 1, 2 to express action representatively.
 - Rewards: As discuss, the daily return can facilitate the calculation and let the agent interact with the environment rapidly. For standardization, we use the equation of
-
-$$ X_{scale} = \frac{X - u}{\sigma}$$
-
+<br>
+<a href="https://www.codecogs.com/eqnedit.php?latex=X_{scale}&space;=&space;\frac{X&space;-&space;u}{\sigma}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?X_{scale}&space;=&space;\frac{X&space;-&space;u}{\sigma}" title="X_{scale} = \frac{X - u}{\sigma}" /></a>
+</br>
 &emsp;The standardization can elimente the bias result from the different data scale for the machine learning model.
 
 #### 2. Experiment analysis
@@ -217,12 +218,13 @@ $$ X_{scale} = \frac{X - u}{\sigma}$$
 &emsp; In Fig. 9, the change of impact has no effort on manual strategy, as well as Q-learning algorithm. Even the is a small fluctuation around 200, but the number of order still remain in a same number nearly 200.  As such, we can conclude that the impact will not or slight influence Number of orders.
 
 <p align = "center">
-    <img src='/img/9.png' width=500/> 
-    <img src='img/10.png' width=500/>
-    <br></br>
-    <b> 
-        Fig.9 Comparison of different method for in sample data
-    </b>
+    <img src='/img/9.png' width="500"> 
+    <img src='img/10.png' width="500"/>
+    <br>
+      <b> 
+          Fig.9 Comparison of different method for in sample data
+      </b>
+  </br>
 </p>
 
 ### Part VI Reference
