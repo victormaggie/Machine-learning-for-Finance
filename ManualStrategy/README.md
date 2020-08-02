@@ -51,9 +51,9 @@
 
 * 2. Bollinger bands
   &emsp; Bollinger Bands are the technical analysis tool developed by John Bollinger, which contains SMA, upper band and lower band, the calculation for upper band and lower band can be shown as following equations,
-  $$BB_{top} = SMA + (2 * std_{sma})$$
-  $$BB_{bottom} = SMA - (2 * std_{sma})$$
-  $$BB_{ratio} = \frac{p(x)-SMA(t)}{2 * std(t)}$$
+  <br>BB<sub>top</sub> = SMA + (2 * std<sub>sma</sub>})</br>
+  <br>BB<sub>bottom</sub> = SMA - (2 * std<sub>sma</sub>)</br>
+  <a href="https://www.codecogs.com/eqnedit.php?latex=BB_{ratio}&space;=&space;\frac{p(x)-SMA(t)}{2&space;*&space;std(t)}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?BB_{ratio}&space;=&space;\frac{p(x)-SMA(t)}{2&space;*&space;std(t)}" title="BB_{ratio} = \frac{p(x)-SMA(t)}{2 * std(t)}" /></a>
 
 <p align = "center">
     <img src='img/2.png'> </br>
