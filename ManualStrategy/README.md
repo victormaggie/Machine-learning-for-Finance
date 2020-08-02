@@ -15,7 +15,6 @@
 * 1.	Simple Moving Average
   &emsp; The Simple Moving Average (SMA) is a technical indicator for determining if an asset price will continue or reverse a bull or bear tread [1](https://www.investopedia.com/terms/s/sma.asp). SMA is calculated as the arithmetic average of an asset price, while Exponential Moving Average (EMA) that weight more on the recent price. The calculation of SMA is shown as following,
 
-
 <p align = "center">
    <a href="https://www.codecogs.com/eqnedit.php?latex=SMA&space;=&space;\frac{A_1&space;&plus;&space;A_2&space;&plus;&space;A_3&space;&plus;&space;A_4&space;...&space;&plus;&space;A_n}{n}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?SMA&space;=&space;\frac{A_1&space;&plus;&space;A_2&space;&plus;&space;A_3&space;&plus;&space;A_4&space;...&space;&plus;&space;A_n}{n}" title="SMA = \frac{A_1 + A_2 + A_3 + A_4 ... + A_n}{n}" /></a>
 </p>
@@ -35,7 +34,7 @@
         - else: </br> Action = Do Nothing
       - End
   _________________________________________________________________________________________</br>
-  <p align = "center">  <font size = "1">This shows how SMA ratio works, but for the real indicators, we combine SMA, Bollinger band and MACD together </font>
+  <p align = "center">  <font size = "1">This shows how SMA ratio works, but for the real indicators, we combine SMA, Bollinger band and MACD together </font> </p>
 
   &emsp;The calculation of , $SMA_{Ratio}$ is relative handy in pandas dataframe, we use the rolling window moving average to calculate, the calculation result is as following, 
 <p align = "center">
@@ -67,25 +66,21 @@
 &emsp; For comparison, Bollinger band percent was also be used in the experiment, but its indication was not useful, as shown in Fig. 3, this indicator cannot give us good signal for my experiment study. As a result, I used Bollinger band ratio offered by project description.
 
 <p align = "center">
-<<<<<<< HEAD
     <img src='img/3.png'> </br>
-=======
-    <img src='../img/3.png'> </br>
->>>>>>> 7aaba3c104f1c8ef6978fd264bc07cac401bf69e
-    <b> 
+    <b>
         Fig.3 Bollinger band percent calculation
     </b>
 </p>
 
 * 3. Moving Average Convergence Divergence (MACD)
  &emsp; Based on exponentially weighted moving average, the calculation formula is shown as,
- $$ewa = \sum_{i=1}^{n}\frac{2}{N+1}(1- \frac{2}{N+1})^{i}x_{i-1} $$
+<a href="https://www.codecogs.com/eqnedit.php?latex=ewa&space;=&space;\sum_{i=1}^{n}\frac{2}{N&plus;1}(1-&space;\frac{2}{N&plus;1})^{i}x_{i-1}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?ewa&space;=&space;\sum_{i=1}^{n}\frac{2}{N&plus;1}(1-&space;\frac{2}{N&plus;1})^{i}x_{i-1}" title="ewa = \sum_{i=1}^{n}\frac{2}{N+1}(1- \frac{2}{N+1})^{i}x_{i-1}" /></a>
  &emsp;  There has three lines in MACD model, the first one is 12 day exponentially weighted moving average, 26 day exponentially weighted moving average, the difference is MACD line,
-  $$MACD_{line} = ewa(p_t, window = 12) - ewa(p_t, window=26)$$
-  $$MACD_{signal} = ewa(MACD_{line}, window=9)$$
+  <br>MACD<sub>line</sub> = ewa(p_t, window = 12) - ewa(p_t, window=26)</br>
+  <br>MACD<sub>signal</sub> = ewa(MACD<sub>line</sub>, window=9)</br>
 
-   &emsp;  As a result, the divergence of MACD, which is the difference of 〖MACD〗_line and 〖MACD〗_signal, can be used as the indication for **BUY** and **SELL** signal.
-   $$MACD_{divergence} = MACD_{line} - MACD_{signal}$$
+   &emsp;  As a result, the divergence of MACD, which is the difference of MACD<sub>line</sub> and MACD<sub>signal</sub>, can be used as the indication for **BUY** and **SELL** signal.
+   <br>MACD<sub>divergence</sub> = MACD<sub>line</sub> - MACD<sub>signal</sub>
 
    <p align = "center">
     <img src='img/4.png'> </br>
