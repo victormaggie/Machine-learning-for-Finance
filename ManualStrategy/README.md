@@ -64,7 +64,7 @@
 &emsp; For comparison, Bollinger band percent was also be used in the experiment, but its indication was not useful, as shown in Fig. 3, this indicator cannot give us good signal for my experiment study. As a result, I used Bollinger band ratio offered by project description.
 
 <p align = "center">
-    <img src='/img/3.png'> </br>
+    <img src='../img/3.png'> </br>
     <b> 
         Fig.3 Bollinger band percent calculation
     </b>
