@@ -1,0 +1,72 @@
+Knowledge:
+
+develop a trading strategy --> intuition and technical analysis
+
+test ---> market simulator
+
+later project ---> using machine learning to create a trading strategy
+
+Template::
+
+1. manual_strategy.py
+2. util.py
+3. ML4T/Data directory but you should use ONLY the API functions in utils.py
+
+Submission:
+
+1. inditcator.py   ---> generate the charts that illustrate your indicators in the report
+2. marketsimcode.py  ---> An improved version of your marketsim code that accepts trades data
+
+---> trade data
+
+3. ManualStrategy.py   ---> manual strategy ---> testPolicy() which returns a trades data frame
+
+4. Theoretically OptimalStrategy.py
+
+----> OptimalStrategy.py
+
+
+Part I:
+
+1. Develop and describe at least 3 and at most 5 technical indicators. 
+---> lecture on time series processing to be helpful
+---> each indicator has to be described by compeling figures
+---> report for each indicator should enable others to reproduce it by reading the description.
+---> details in writing, we can use Pseudocode figure to illustrate.
+---> at least one indicator should be different than SMA, Bollinger bands, RSI
+
+
+Part II:
+
+1. CONSTRAINTS : portfolio size and order limits ---> 10000
+
+---> create a set of trades that represents the best strategy could possible do during the in sample preiod
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
