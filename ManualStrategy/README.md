@@ -64,7 +64,11 @@
 &emsp; For comparison, Bollinger band percent was also be used in the experiment, but its indication was not useful, as shown in Fig. 3, this indicator cannot give us good signal for my experiment study. As a result, I used Bollinger band ratio offered by project description.
 
 <p align = "center">
+<<<<<<< HEAD
     <img src='img/3.png'> </br>
+=======
+    <img src='../img/3.png'> </br>
+>>>>>>> 7aaba3c104f1c8ef6978fd264bc07cac401bf69e
     <b> 
         Fig.3 Bollinger band percent calculation
     </b>
@@ -215,8 +219,13 @@ $$ X_{scale} = \frac{X - u}{\sigma}$$
 &emsp; In Fig. 9, the change of impact has no effort on manual strategy, as well as Q-learning algorithm. Even the is a small fluctuation around 200, but the number of order still remain in a same number nearly 200.  As such, we can conclude that the impact will not or slight influence Number of orders.
 
 <p align = "center">
+<<<<<<< HEAD
     <img src='img/9.png' width=500> 
     <img src='img/10.png' width=500>
+=======
+    <img src='/img/9.png' width=500/> 
+    <img src='img/10.png' width=500/>
+>>>>>>> 7aaba3c104f1c8ef6978fd264bc07cac401bf69e
     </br>
     <b> 
         Fig.9 Comparison of different method for in sample data
