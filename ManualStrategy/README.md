@@ -163,11 +163,13 @@
 - Otherwise, do NOTHING
 
 <p align = "center"><b> Table 2. Statistic calculation table</b> </p>
+
 |   Statistics Items	|   Manual Strategy	|   Benchmark	| 
 |:---:	|:---:	|:---:	|
 |   Cumulative return	|   0.6615	|   0.0123	|  
 |   Standard deviation of daily return	|   0.000783	|   0.0012	|  
 |   Mean of daily return	|   0.00078	|   0.0012	|  
+
 &emsp; The calculation plot is shown as following, 
 <p align = "center">
     <img src='img/6.png'> </br>
