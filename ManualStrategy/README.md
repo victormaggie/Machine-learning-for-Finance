@@ -12,7 +12,7 @@
 
 &emsp; For this part, I will describe the indicators for the project. In trial and error procedures, I tried `Kalman Filter`, `sharp ratio`, `Moving Average Convergence Divergence(MACD)`, `Bollinger Band`, `simple moving average ratio`, `Bollinger Band percent`, and `Fourier Transformation`. the performance of Kalman filter can only tracking the increase of stocks, the stochastic influence of circumstance cannot be well predicted, the Bollinger Band Percent is a new concept that was proposed in 1990, but the performance of Bollinger Band Percent is still not satisfying for my case study. As a result, I end up with MACD, simple moving average ratio and Bollinger ratio to be the indicators. 
 
-* 1.	Simple Moving Average
+* **1.	Simple Moving Average** <br> </br>
   &emsp; The Simple Moving Average (SMA) is a technical indicator for determining if an asset price will continue or reverse a bull or bear tread [1](https://www.investopedia.com/terms/s/sma.asp). SMA is calculated as the arithmetic average of an asset price, while Exponential Moving Average (EMA) that weight more on the recent price. The calculation of SMA is shown as following,
 
 <p align = "center">
@@ -49,7 +49,7 @@
 
 &emsp; As we can see in Fig 1., if we use Algorithm 1, the **BUY** and **SELL** signal is obvious. I analyze the correlation of SMA_Ratio and JP Morgan stocks price, their correlation is negative, that means the peak of SMA_Ratio can give us the lower stock value and we can **BUY** stock, as in the arrow region of the figure.
 
-* 2. Bollinger bands
+* **2. Bollinger bands**<br> </br>
   &emsp; Bollinger Bands are the technical analysis tool developed by John Bollinger, which contains SMA, upper band and lower band, the calculation for upper band and lower band can be shown as following equations,
   <br>BB<sub>top</sub> = SMA + (2 * std<sub>sma</sub>})</br>
   <br>BB<sub>bottom</sub> = SMA - (2 * std<sub>sma</sub>)</br>
@@ -72,7 +72,7 @@
     </b>
 </p>
 
-* 3. Moving Average Convergence Divergence (MACD)
+* 3. Moving Average Convergence Divergence (MACD) <br> </br>
  &emsp; Based on exponentially weighted moving average, the calculation formula is shown as,
 <a href="https://www.codecogs.com/eqnedit.php?latex=ewa&space;=&space;\sum_{i=1}^{n}\frac{2}{N&plus;1}(1-&space;\frac{2}{N&plus;1})^{i}x_{i-1}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?ewa&space;=&space;\sum_{i=1}^{n}\frac{2}{N&plus;1}(1-&space;\frac{2}{N&plus;1})^{i}x_{i-1}" title="ewa = \sum_{i=1}^{n}\frac{2}{N+1}(1- \frac{2}{N+1})^{i}x_{i-1}" /></a>
  &emsp;  There has three lines in MACD model, the first one is 12 day exponentially weighted moving average, 26 day exponentially weighted moving average, the difference is MACD line,
@@ -217,18 +217,14 @@ $$ X_{scale} = \frac{X - u}{\sigma}$$
 &emsp; In Fig. 9, the change of impact has no effort on manual strategy, as well as Q-learning algorithm. Even the is a small fluctuation around 200, but the number of order still remain in a same number nearly 200.  As such, we can conclude that the impact will not or slight influence Number of orders.
 
 <p align = "center">
-<<<<<<< HEAD
-    <img src='img/9.png' width=500> 
-    <img src='img/10.png' width=500>
-=======
     <img src='/img/9.png' width=500/> 
     <img src='img/10.png' width=500/>
->>>>>>> 7aaba3c104f1c8ef6978fd264bc07cac401bf69e
-    </br>
+    <br></br>
     <b> 
         Fig.9 Comparison of different method for in sample data
     </b>
 </p>
+
 ### Part VI Reference
 
 * 1.	https://www.investopedia.com/terms/s/sma.asp
