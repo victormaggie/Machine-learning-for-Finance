@@ -32,8 +32,7 @@
         - If  <a href="https://www.codecogs.com/eqnedit.php?latex=SMR_{ratio}&space;<&space;0.92" target="_blank"><img src="https://latex.codecogs.com/svg.latex?SMR_{ratio}&space;<&space;0.92" title="SMR_{ratio} < 0.92" /></a>:</br>  Action = LONG
         - If  <a href="https://www.codecogs.com/eqnedit.php?latex=SMR_{ratio}&space;>&space;1.92" target="_blank"><img src="https://latex.codecogs.com/svg.latex?SMR_{ratio}&space;>&space;1.92" title="SMR_{ratio} > 1.92" /></a>:</br>  Action = SHORT
         - else: </br> Action = Do Nothing
-      - End
-      <br>
+      - End <br>
   _________________________________________________________________________________________</br>
   <p align = "center">  <font size = "1">This shows how SMA ratio works, but for the real indicators, we combine SMA, Bollinger band and MACD together </font> </p>
 
@@ -91,7 +90,7 @@
    <p align="center">
    <br><a href="https://www.codecogs.com/eqnedit.php?latex=MACD_{divergence}&space;=&space;MACD_{line}&space;-&space;MACD_{signal}" target="_blank"><img src="https://latex.codecogs.com/svg.latex?MACD_{divergence}&space;=&space;MACD_{line}&space;-&space;MACD_{signal}" title="MACD_{divergence} = MACD_{line} - MACD_{signal}" /></a>
   </p>
-   <p align = "center">
+ <p align = "center">
     <img src='img/4.png'> </br>
     <b> 
         Fig.4 MACD calculation results
@@ -164,13 +163,11 @@
 - Otherwise, do NOTHING
 
 <p align = "center"><b> Table 2. Statistic calculation table</b> </p>
-<p align = "center>
 |   Statistics Items	|   Manual Strategy	|   Benchmark	| 
 |:---:	|:---:	|:---:	|
 |   Cumulative return	|   0.6615	|   0.0123	|  
 |   Standard deviation of daily return	|   0.000783	|   0.0012	|  
 |   Mean of daily return	|   0.00078	|   0.0012	|  
-</p>
 &emsp; The calculation plot is shown as following, 
 <p align = "center">
     <img src='img/6.png'> </br>
