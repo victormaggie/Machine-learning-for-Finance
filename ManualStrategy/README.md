@@ -215,8 +215,8 @@ $$ X_{scale} = \frac{X - u}{\sigma}$$
 &emsp; In Fig. 9, the change of impact has no effort on manual strategy, as well as Q-learning algorithm. Even the is a small fluctuation around 200, but the number of order still remain in a same number nearly 200.  As such, we can conclude that the impact will not or slight influence Number of orders.
 
 <p align = "center">
-    <img src='/img/9.png' width=500> 
-    <img src='img/10.png' width=500>
+    <img src='/img/9.png' width=500/> 
+    <img src='img/10.png' width=500/>
     </br>
     <b> 
         Fig.9 Comparison of different method for in sample data
